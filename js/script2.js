@@ -1,15 +1,16 @@
 //----- Part 2
 
 var MHCIday = [
-  { item: 'UCRE',  hours: 8 },
+  { item: 'UCRE',  hours: 6 },
   { item: 'PUI',  hours: 3 },
-  { item: 'courses for kicks and giggles', hours: 4 },
-  { item: 'bond with other students', hours: 4 },
-  { item: 'sleep', hours: 5}
+  { item: 'Classes for Fun', hours: 2 },
+  { item: 'Bond with Other Students', hours: 4 },
+  { item: 'sleep', hours: 8},
+  { item: 'misc', hours: 1}
 ];
 
 var pie = d3.pie()
-  .value(function(d) { return d.hours })
+  .value(function(d) { return d.hours });
 
 var slices = pie(MHCIday);
 // console.log(slices);
