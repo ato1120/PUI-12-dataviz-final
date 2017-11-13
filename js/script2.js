@@ -48,10 +48,5 @@ function mousemove(d){
 			.text(d.data.item +": "+d.data.hours)
 			.style("top", event.pageY+"px")
 			.style("left", event.pageX+"px");
-
-	d3.select(d)
-		.transition()
-		.duration(250)
-		.attr("transform", "scale(1.2)");
 }
 
